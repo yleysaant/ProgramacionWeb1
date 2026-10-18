@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Listas y Formularios HTML</title>
+</head>
+<body>
+<h1>Listas y formularios</h1>
+<div>
+    <h2>Listas</h2>
+    <h3>Listas no ordenadas</h3>
+    <ul>
+        <li>Leche</li>
+        <li>Carne</li>
+        <li>Pan</li>
+        <li>Jamón</li>
+        <li>Papel</li>
+    </ul>
+    <h3>Listas ordenadas</h3>
+    <ol type="Ii" start="10" reversed>
+        <li>Decimo</li>
+        <li>Onceavo</li>
+        <li>Doceavo</li>
+        <li>Treceavo</li>
+        <li>Catorceavo</li>
+    </ol>
+    <h3>Listas de Definiciones</h3>
+    <dl>
+        <dt>HTML</dt>
+        <dd>Lenguaje de Marcados de Hipertexto</dd>
+        <dt>CSS</dt>
+        <dd>Hoja de Estilos de Cascada</dd>
+        <dt>JS</dt>
+        <dd>Java Script</dd>
+    </dl>
+    <h3>Listas Anidadas</h3>
+    <p>Desarrollo Web</p>
+    <ul>
+        <li>Front-End
+            <ol type="I">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JS</li>
+            </ol>
+        </li>
+        <li>Back-End
+            <ol type="A">
+                <li>NodeJS</li>
+                <li>MySQL</li>
+                <li>ArchLinux</li>
+            </ol>
+        </li>
+    </ul>
+    <hr>
+    <div>
+        <h2>Formularios</h2>
+        <h3>Formulario de Inicio De Sesion</h3>
+        <form action="/inicio_sesion" method="get">
+            <label for="username">Nombre de Usuario</label>
+            <input type="text" id="username" name="username" required>
+            <label for="password">Contraseña</label>
+            <input type="password" id="password" name="password" placeholder="Tu contraseña debe contener numeros" required>
+            <br>
+            <button type="submit">Enviar</button>
+        </form>
+        <hr>
+        <h3>Formulario con campo de entrada de varias lineas</h3>
+        <form action="validar.js" method="post">
+            <label for="name">Nombre:</label>
+            <input type="text" id="name" name="name" required placeholder="Introduce tu nombre">
+            <br>
+            <label for="opinion">Comentario</label>
+            <textarea name="opinion" id="opinion" placeholder="Tu opinion" required rows="5" cols="40"></textarea>
+            <button type="submit">Enviar Comentario</button>
+        </form>
+        <hr>
+        <h3>Formulario con una lista desplegable de opciones</h3>
+        <form action="/opciones" method="post">
+            <label for="bebidas">Bebidas:</label>
+            <select name="bebidas" id="bebidas">
+                <option value="coca_cola">Coca-Cola</option>
+                <option value="pepsi">Pepsi</option>
+                <option value="boing">Boing</option>
+                <option value="te">Te</option>
+                <option value="jarrito">Jarrito</option>
+            </select>
+            <br>
+            <label for="postres">Postres:</label>
+            <select name="postres" id="postres">
+                <option value="" disabled selected>Selecciona un postre</option>
+                <option value="pay_limon">Pay de Limon</option>
+                <option value="pay_fresa">Pay de Fresa</option>
+                <option value="flan">Flan</option>
+                <option value="gelatina">Gelatina</option>
+                <option value="pastel">Pastel</option>
+            </select>
+            <input type="submit">
+        </form>
+        <h3>Formulario con distintos campos de datos</h3>
+        <form action="datos.php" method="post">
+            <fieldset>
+                <legend>Nombre Completo</legend>
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                <br>
+                <label for="ap_paterno">Ap. Paterno:</label>
+                <input type="text" id="ap_paterno" name="ap_paterno" required>
+                <br>
+                <label for="ap_materno">Ap. Materno:</label>
+                <input type="text" id="ap_materno" name="ap_materno" required>
+            </fieldset>
+            <fieldset>
+                <legend>Otros Datos:</legend>
+                <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+                <br>
+                <label for="edad">Edad</label>
+                <input type="number" id="edad" name="edad" required min="18" max="70">
+                <br>
+                <label for="numero_cuenta">Numero de Cuenta</label>
+                <input type="text" id="numero_cuenta" name="numero_cuenta" required pattern="[0-9]{9}" minlength="9" maxlength="9">
+                <br>
+                <label for="email">Correo Electronico</label>
+                <input type="email" id="email" name="email" required>
+            </fieldset>
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+</div>
+</body>
+</html>
