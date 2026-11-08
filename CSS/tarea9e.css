@@ -1,0 +1,82 @@
+.rgb {
+    background-color: rgb(255, 164, 164);
+    color: rgb(33, 74, 45);
+}
+
+.rgb h3 {
+    color: rgb(145,56,89);
+}
+
+/*Modelo RGBA*/
+
+.rgba{
+    background-color: rgba(141, 97, 180, 0.5);
+    color: rgb(86, 155, 12);
+}
+
+/*Modelo hex*/
+
+.hex {
+    background-color: #83bae1;
+    color: #fff;
+}
+
+/*Modelo HSL*/
+
+.hsl {
+    background-color: hsl(59, 75%, 81%);
+    color: hsl(290, 81%, 49%);
+}
+/*Modelo HSLA*/
+
+.hsla {
+    background-color: hsla(2, 69%, 59%, 0.4);
+    color: hsla(48, 56, 78, 0.6
+    );
+}
+
+/*Colores Multinavegador*/
+
+.black {
+    color: black;
+}
+
+.white {
+    background-color: black;
+    color: white;
+}
+
+.salmon {
+    color: salmon;
+}
+
+.blue {
+    color: blue;
+}
+
+.lime {
+    color: lime;
+}
+
+.borde{
+    /* border-style: solid;
+    border-color: red;
+    border-width: 2px;
+    se puede poner propiedad por propiedad o todo en una linea ordenado en ancho, estilo y color */
+    border: 10px dotted rgb(252, 186, 186);
+}
+
+
+.borde-interno{
+    border: 2px solid rgb(247, 255, 137);
+}
+
+/*degradados*/
+
+.lineal{
+    background-image: linear-gradient(to top, red, rgb(255, 179, 0));
+}
+
+.radial{
+    background-image: radial-gradient(circle, violet,rgb(238, 71, 154));
+}
