@@ -1,0 +1,113 @@
+body{
+    font-family: Arial, "Helvetica Neue", sans-serif;
+}
+#encabezado{
+    background-color: black;
+    color: white;
+    border:2px solid;
+    /*El relleno o padding: espacio entre el contenido y su borde
+    se aplica los valores en sentido horario: top, rigt , bottom, left
+    1valor: t,r,b,1 2valor: t,r1 3valores:t,r1 */
+
+
+    padding: 15px;
+
+    /*Margen: espacio que hay entre un elemento HTML y el resto de los elementos HTML a su alrededor*/
+    margin: 15px 5px;
+
+    /*Es el contorno visula alrededor de nuestro elemento HTML(dentro  de el podemos  encontrar
+    el contenidodel  elemento y su relleno)
+    valores(solid,dotted, dashed, double, grove,ridge, insert, outset, hidden y none)
+     */
+
+    border: 10px ridge rgb(0,195,255);
+    border-top-style : double;
+    border-left-color: red;
+    border-right-color: red;
+    border-bottom-width: 2px;
+    border-radius: 10%;
+
+    /*
+    border-style: solid;
+    border-width: 2px;
+    border-color: red;
+
+    */
+
+    /*se puede itlizar para  crear  efectosde sombra
+    alrededoor  del borde de un elemento , se deben
+    especificar los valores ;los deplazamiento- vertical , radio -desenfoque radio-propagacion
+     */
+    box-shadow: 5px -5px 5px 5px rgb(0, 195, 255);
+
+}
+
+#encabezado{
+    text-decoration: underline;
+}
+
+.introduccion{
+    border: 2px solid gold;
+    background-color: black;
+    padding: 5px;
+    color: grey;
+}
+.introduccion p{
+    width: 300px;
+    height: 150px;
+    padding: 5px;
+    border: 2px dotted gold;
+    box-sizing: border-box;
+    font-family: "Dancing Script", cursive;
+
+}
+.introduccion span{
+    width: 300px;
+    height: 150px;
+    border: 2px solid gold;
+    padding: 10px;
+    margin: 50px;
+    font-family:"Dancing Script", cursive;
+}
+
+/*El margen en un elemento en linea solo es aceptado en izq y derecha */
+
+.texto-fuente{
+    background-color: black;
+    color: white;
+}
+.propiedades-texto h2{
+    border: 2px solid red;
+    padding: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 2px 2px 3px red;
+
+}
+.propiedades-texto p{
+    padding: 8px;
+    text-align: justify;
+    tex-height: 1.5;
+    letter-spacing: 0.5px;
+    word-spacing: 15px;
+
+}
+.propiedades-fuentes h2{
+    padding: 5px;
+    text-align: center;
+    text-shadow: 2px 2px 3px grey;
+    font-family: "Times New Roman";
+    font-size: 35px;
+}
+
+.propiedades-fuentes{
+    padding: 8px;
+    text-align: justify;
+    text-height: normal;
+    letter-spacing: 1.5px;
+    word-spacing: 0.5px;
+    font-weight: 500;
+    font-style: oblique;
+
+}
+/* en los textos de introduccion se pone font-family

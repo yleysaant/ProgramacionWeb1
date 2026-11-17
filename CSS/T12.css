@@ -1,0 +1,90 @@
+html {
+    font-size: 10px;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#encabezado {
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-size: 2em;
+    padding: 15px;
+}
+
+#encabezado h1 {
+    text-shadow: 2px 2px 2px rebeccapurple;
+    text-align: center;
+    font-size: 2em;
+}
+
+#encabezado p {
+    font-size: 2em;
+}
+
+.contenedor-enlaces {
+    border: 2px dotted gold;
+    background-color: black;
+    color: aliceblue;
+    padding: 20px;
+    margin: 15px;
+    border-radius: 8px;
+}
+
+.enlaces h2 {
+    text-shadow: 2px 2px 2px rgb(131, 8, 255);
+    text-align: center;
+    font-size: 3rem;
+}
+
+.enlaces p {
+    text-align: justify;
+    font-size: 1.4rem;
+}
+
+/* Orden para los estilos de los estados de un enlace (LVFHA: Link, Visited, Focus, Hover, Active) */
+a:link {
+    color: rgb(188, 36, 158);
+    text-decoration: none;
+}
+
+a:visited {
+    color: seagreen;
+    text-decoration: none;
+}
+
+a:focus {
+    background-color: red;
+    color: black;
+    border: 2px dotted white;
+}
+
+a:hover {
+    font-size: 1.8rem;
+    color: black;
+    background-color: white;
+    border: 2px solid red;
+}
+
+a:active {
+    color: yellow;
+    background-color: blue;
+    font-size: 20px;
+    border: 2px solid gold;
+}
+
+.enlaces ul {
+    border: 2px solid red;
+    padding: 15px;
+    list-style-type: decimal;
+    list-style-position: inside;
+}
+
+.enlaces ul li {
+    margin: 0.8rem;
+    border: 0.2rem solid green;
+    padding: 5px;
+}

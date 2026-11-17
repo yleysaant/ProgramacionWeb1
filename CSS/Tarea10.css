@@ -1,0 +1,40 @@
+.fondo-foxy{
+
+    /*Background-image: Permite agregar imagenes como fondo de un elemento o de un contenedor
+    y tambien se pueden agregar gradientes*/
+    background-image: linear-gradient(to top, rgb(243 236 243 / 0), rgb(195 194 194 / 0)), url("../imagenes/Foxy.jpg");
+
+    /*Background-size (cover, contain, width(px)-height(px)
+    Especificar el tamaño de la imagen de fondo*/
+    background-size: cover;
+
+    /*Backgorund-repeat (repeat, no-repeat, repeat-x, repeat-y)
+    Aplica cuando la imagen es mas pequeña que su contenedor*/
+    background-repeat: no-repeat;
+
+    /*Background-Position (top, bottom, center, right, left)*
+    establecer la posicion inicial de una imagen de fondo en su contenedor*/
+    background-position: center;
+
+    /*Background-attachment (scroll y fixed)
+    Se utiliza para que la imagen quede fija en su contenedor
+    cuando un usuario se desplaza por la página
+    */
+    background-attachme2nt: fixed;
+
+    /*Propiedades generales del contenedor*/
+    width: 1500px;
+    height: 1700px;
+}
+
+
+.fondo-Charlotte{
+    /*background: (image) (position) / (size) (repeat) (attachment) (color)*/
+
+    background: url("../imagenes/Charlotte.jpg") right / contain repeat scroll rgba(255, 255, 255, 0.226);
+    width: 300px;
+    height: 1000px;
+    border: 2px solid red;
+}
+body {
+}
